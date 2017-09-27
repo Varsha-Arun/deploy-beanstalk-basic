@@ -7,7 +7,7 @@ jobs:
       - OUT: deploy-eb-basic-image
 
   - name: deploy-eb-basic-deploy
-    type: runCLI
+    type: runSh
     flags:
       - deploy-eb-basic
     steps:
@@ -32,7 +32,7 @@ jobs:
 
 
   - name: deploy-eb-multi-deploy
-    type: runCLI
+    type: runSh
     flags:
       - deploy-eb-basic
     steps:
